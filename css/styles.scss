@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Commissioner';
+    src: url('/fonts/CommissionerRegular/CommissionerRegular.eot');
+    src: url('/fonts/CommissionerRegular/CommissionerRegular.eot') format('embedded-opentype'),
+        url('/fonts/CommissionerRegular/CommissionerRegular.woff2') format('woff2'),
+        url('/fonts/CommissionerRegular/CommissionerRegular.woff') format('woff'),
+        url('/fonts/CommissionerRegular/CommissionerRegular.ttf') format('truetype'),
+        url('/fonts/CommissionerRegular/CommissionerRegular.svg#CommissionerRegular') format('svg');
+
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('/fonts/CommissionerMedium/CommissionerMedium.eot');
+    src: url('/fonts/CommissionerMedium/CommissionerMedium.eot') format('embedded-opentype'),
+        url('/fonts/CommissionerMedium/CommissionerMedium.woff2') format('woff2'),
+        url('/fonts/CommissionerMedium/CommissionerMedium.woff') format('woff'),
+        url('/fonts/CommissionerMedium/CommissionerMedium.ttf') format('truetype'),
+        url('/fonts/CommissionerMedium/CommissionerMedium.svg#CommissionerSemiBold') format('svg');
+
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('/fonts/CommissionerSemiBold/CommissionerSemiBold.eot');
+    src: url('/fonts/CommissionerSemiBold/CommissionerSemiBold.eot') format('embedded-opentype'),
+        url('/fonts/CommissionerSemiBold/CommissionerSemiBold.woff2') format('woff2'),
+        url('/fonts/CommissionerSemiBold/CommissionerSemiBold.woff') format('woff'),
+        url('/fonts/CommissionerSemiBold/CommissionerSemiBold.ttf') format('truetype'),
+        url('/fonts/CommissionerSemiBold/CommissionerSemiBold.svg#CommissionerSemiBold') format('svg');
+
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    font-size: 10px;
+    line-height: 1.15;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 1.5rem/1.4 'Commissioner', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin-top: 0;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.entry-info {
+    margin: 3.5rem 0;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 5.7fr 3fr;
+        column-gap: 25px;
+    }
+}
+
+.handle {
+    cursor: pointer;
+}
+
+.link {
+    cursor: pointer;
+
+    display: block;
+    margin-bottom: 1.5rem;
+    color: #000;
+    font-weight: 600;
+    transition: color .25s;
+
+    &:hover {
+        color: #0051D4;
+        transition: color .25s;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .block-adaptive {
+        display: flex;
+        margin-bottom: 2.5rem;
+    }
+
+    html {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .entry-info {
+        &__inner {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .block-adaptive {
+        display: grid;
+    }
+
+}
+
+@import "../includes/form";
+@import "../includes/list";
+@import "../includes/intro";
+@import "../includes/draggable-container";
+@import "../includes/sliders";
+
+

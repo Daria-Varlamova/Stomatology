@@ -1,0 +1,105 @@
+.form {
+    background: #FFF;
+    border-radius: 20px;
+
+    .form-input {
+        display: block;
+        width: 100%;
+        background: #fff;
+        border: 1px solid #717880;
+        font: 400 1.6rem/2.3rem Commissioner, Arial, Helvetica, sans-serif;
+        padding: 2rem 2rem 1rem;
+        color: #000;
+        transition: border-color .25s, box-shadow .25s;
+        box-shadow: none;
+        border-radius: 5px;
+        margin: 0;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    .form-label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5.5rem;
+        padding: 0 2rem;
+        pointer-events: none;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        color: #000;
+        font-size: 1.5rem;
+        line-height: 1.2;
+        font-weight: 400;
+        transition: .25s;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transform-origin: 20px 0;
+    }
+
+    &__submit {
+        width: 100%;
+        background: #0051D4;
+        color: #fff;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+        border: 1px solid transparent;
+
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        font: 500 1.7rem/1 Commissioner, Arial, Helvetica, sans-serif;
+        text-align: center;
+        text-decoration: none;
+        height: 5.1rem;
+        transition: border-color .25s, color .25s, background .25s;
+        cursor: pointer;
+
+        &:hover {
+            border-color: #0866ff;
+            background: #0866ff;
+            color: #fff;
+        }
+    }
+
+    .form-group {
+        position: relative;
+        width: 100%;
+        transition: .3s linear;
+        margin: 0 0 2rem;
+        padding: 0;
+        border: none;
+    }
+}
+
+.form-wrap {
+    &__link-tel {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #0051D4;
+    box-shadow: 0 0 0 1px #0051d4;
+    background: #fff;
+}
+
+.form-input::placeholder {
+    color: #000;
+    opacity: 1;
+}
+
+.form-input:focus~.form-label,
+.form-input:not(:placeholder-shown)~.form-label {
+    transform: scale(.75) translate(0, -8px);
+    color: #A9B3BF;
+}
