@@ -60,7 +60,7 @@ h2 {
   margin: 3.5rem 0;
 }
 
-.entry-info__inner {
+.entry-info-inner {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 5.7fr 3fr;
@@ -102,7 +102,7 @@ h2 {
 }
 
 @media screen and (max-width: 820px) {
-  .entry-info__inner {
+  .entry-info-inner {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
